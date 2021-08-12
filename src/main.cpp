@@ -17,10 +17,10 @@ class Students : public Show { // inheritance
     	{
         	cout << ":::::::::::" <<  endl;
     	}
-        char* k="All";
+	std::string k="All";
         Students(); // constructor
         Students(int x); // constructor with element
-        int print(list<string> Spisok){
+        void print(list<string> Spisok){
             cout << "Students" << "\n";
             for(i = Spisok.begin(); i != Spisok.end(); i++)
             cout << (*i) << "\n";
@@ -42,7 +42,7 @@ class IVT : public Students{ // inheritance
     	{
         	cout << "+++++++++++" <<  endl;
     	}      
-        int print(list<string> Spisok){
+        void print(list<string> Spisok){
             cout << "\n" << "IVT" << "\n";
             pe = Spisok.begin();
             advance(pe,3);
@@ -61,7 +61,7 @@ class MTS : public Students{ // inheritance
     	{
         	cout << "===========" <<  endl;
     	}
-        int print(list<string> Spisok){
+        void print(list<string> Spisok){
             cout << "\n" << "MTS" << "\n";
             pb = Spisok.begin();
             advance(pb,3);
@@ -80,7 +80,7 @@ class AES : public Students{ // inheritance
     	{
         	cout << "+++++++++++" <<  endl;
     	}
-        int print(list<string> Spisok){
+        void print(list<string> Spisok){
             cout << "\n" << "AES" << "\n";
             pb = Spisok.begin();
             advance(pb,6);
@@ -100,7 +100,7 @@ class MRM : public Students{ // inheritance
     	{
         	cout << "===========" <<  endl;
     	}
-        int print(list<string> Spisok){
+        void print(list<string> Spisok){
             cout << "\n" << "MRM" << "\n";
             pb = Spisok.begin();
             advance(pb,9);
